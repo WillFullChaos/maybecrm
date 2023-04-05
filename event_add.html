@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>New event</title>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <div class="logo">
+          <a href="index.html">Home</a>
+        </div>
+        <nav>
+         <ul>
+          
+          <li><a href="vacancy_add.html">Vacancies</a></li>
+          <li><a href="event_add.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+         </ul>
+        </nav>
+       </header>
+</head>
+
+
+<body>
+<form action="/vacancy" method="POST">
+    <input type="text" name="description" placeholder="description">
+    <input type="text" name="event_date" placeholder="event_date">
+    <input type="text" name="title" placeholder="title">
+    <input type="text" name="due_to_date" placeholder="due_to_date">
+    <input type="submit" value="Add event">
+</form>
+<div>
+    {{events}}
+</div>
+</body>
+<footer>
+    <p>&copy; 2023 TOP CRM</p>
+   </footer>  
+</html>
